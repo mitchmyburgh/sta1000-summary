@@ -1,0 +1,788 @@
+\documentclass[a4paper,10pt]{article}
+%**************************************************************************************************
+% PACKAGES
+%**************************************************************************************************
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{graphicx,color}
+\usepackage{bm}	
+\usepackage{vector}
+\usepackage{hyperref}
+\usepackage[a5paper]{geometry}
+\usepackage{xfrac}
+
+%**************************************************************************************************
+% DEFAULT SETTINGS
+%**************************************************************************************************
+
+
+%**************************************************************************************************
+% DOCUMENT DETAILS
+%**************************************************************************************************
+
+\title{STA1000F \\
+{\bf Summary} }
+\author{Mitch Myburgh \\
+MYBMIT001}
+
+%**************************************************************************************************
+% MAIN DOCUMENT 
+%**************************************************************************************************
+
+\begin{document}
+\maketitle
+
+
+
+%*********************************************************************************************************
+\section{Module 1:  Probability}
+%*********************************************************************************************************
+
+%*********************************************************************************************************
+\subsection{Work Unit 1: Introducing Probability}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsubsection{Definitions}
+%*********************************************************************************************************
+\begin{enumerate}
+\item \textbf{Random Experiment:} A procedure whose outcome (result) in a particular performance (trial) cannot be predetermined.
+\item \textbf{Long Run Pattern (Average):} the average result over a large number of trials  
+\item \textbf{Random Variation:} This implies that we never know the value of the next random event
+\item \textbf{Statistical Distributions:} Distributions of data  
+\item \textbf{Fair Game:} No one wins or loses in the long run
+ \item \textbf{House Advantage:} The profit made by the house (casino)
+\end{enumerate}
+%*********************************************************************************************************
+\subsubsection{Formula}
+%*********************************************************************************************************
+\begin{enumerate}
+\item \[ Win\% = \frac{Total \;Payout\; for\; a\; winning\; number}{amount\; to\; be\; bet\; over\; all\; numbers} \times 100\]
+\item \[ Win \% \times fair \; payout = payout\]
+\item \[ fair \; payout -fp\times HA = payout  \]
+\item \[ fair\; payout = (probability \; of \; winning)^{-1} \times bet \]
+\item \[ HA = 100 - Win\% \]
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsubsection{Examples}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item Die: S = \{1,2,3,4,5,6\}   P(6) = \sfrac{1}{6}   P(even) = \sfrac{3}{6} = \sfrac{1}{2}
+	\item Odds: odds of \{6\} = 1:5
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Work Unit 2: Set Theorem, Probability Axioms and Theorems}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsubsection{Definitions}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item Sets can be determined by a list of elements ($A = \{e,f,g,1,2\}$) or a rule ($B = \{x|1 \leq x \leq 10,\; x\in \mathbb{Z}\}$)
+	\item Order and repetition in sets is irrelevant $\{1,3,4,4,2\} = \{1,2,3,4\}$
+	\item Element member of set ($ e\in A$) vs Element not member ($e \not\in B$)
+	\item \textbf{Subsets:} if $G \subset H$ and $G \supset H$ then $G=H$
+	\item \textbf{Intersection:}  $A \cap B = \{1,2\}$
+	\item \textbf{Union:} $A \cup B = \{e,f,g,1,2,3,4,5,6,7,8,9,10\}$
+	\item \textbf{Complement:} $S = \{1,2,3,4\}$, $C = \{1,2\}$, $\bar{C} = \{3,4\}$
+	\item \textbf{Empty Set:} $\emptyset = \{\}$
+	\item \textbf{Universal Set (Sample Sapce)} S - all possible outcomes of a random experiment
+	\item \textbf{Mutually Exclusive (Disjoint):} If $L \cap M = \emptyset$
+	\item \textbf{Pairwise Mutually Exclusive, Exhaustive Sets:} A_1, A_2, \ldots ,A_n \text{ s.t. }\\ $A_i \cap A_j = \emptyset \text{ if } i \neq j \text{ and } A_1\cup A_2 \cup \ldots \cup A_n = S$
+	\item \textbf{Event:} Subset of sample space (S = certain event, $\emptyset$ = impossible event)
+	\item \textbf{Elementary Event:} Event with one member ($A = \{3\}$) Always mutually exclusive, $P(A) = \sfrac{n(A)}{n(S)}$. NB not $\emptyset$ 
+	\item A occurs if the outcome of the trial is a member of A
+	\item \textbf{Relative Frequency:} \sfrac{r}{n}, r= number of times A occurs, n = number of trials, $0\leq \sfrac{r}{n} \leq1$, $P(A) = \lim_{n\to\infty} \sfrac{r}{n}$$
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsubsection{Formula}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item \[ (A\cup B)\cap C = (A\cap C)\cup (B\cap C)\]
+	\item \[ A \cup B = A\cup (B\cap \bar{A})\]
+	\item Kolmogorov's Axioms of Probability \\ S = sample space, $\forall A\subset S$, $P(A) \in \mathbb{R}$ st
+	\begin{enumerate}
+		\item $0\leq P(A) \leq1$
+		\item $P(S) = 1$
+		\item If $A\cap B = \emptyset$ then $P(A\cup B) = P(A)+P(B)$
+		\item Consequence: $P(\emptyset) = 0$
+	\end{enumerate}
+	\item \[  \text{Let } A\subset S \text{ then } P(\bar{A}) = 1 - P(A)\]
+	\item \[ \text{If }A\subset S \text{ and } B\subset S \text{ then } P(A) = P(A\cap B)+P(A\cap \bar{B})\]
+	\item \[ P(A\cup B) = P(A)+P(B)-P(A\cap B) \]
+	\item \[ \text{If } B\subset A \text{ then } P(B)\leq P(A) \]
+	\item  \text{If} A_1, \ldots , A_n \text{ are pairwise mutually exclusive then: } \[ P(\cup_{i = 1}^{n}A_i) = \sum_{i=1}^{n}P(A_i)\]
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Work Unit 3: Permutations and Combinations}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsubsection{Counting Rules}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item Permutation: order matters, repetition not allowed \[ n!\]
+	\item Permutation: order matters, repetition not allowed \[ (n)_r = \frac{n!}{(n-r)!}\]
+	\item Permutations: order matters, repetition allowed \[ n^r \]
+	\item Combinations: Order doesn't matter, repetition not allowed \[\binom{n}{r}  = \frac{n!}{r!(n-r)!}\]
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Work Unit 4: Conditional Probability and Independent Events}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item Conditional Probability: \[ P(A|B) = \frac{P(A\cap B)}{P(B)} \]
+	\item Complement of Conditional Probability: \[ P(P|D) = 1-P(\bar{P}|D) \]
+	\item Baye's Theorem: \[ P(D|P) = \frac{P(P|D)P(D)}{P(P|D)P(D)+P(P|\bar{D})P(\bar{D})} \]
+	\item Baye's Theorem for mutually exclusive exhaustive events: \[ P(A_i|B) = \frac{P(B|A_i)P(A_i)}{\sum_i P(B|A_i)P(A_i)} \]
+	\item Independent Events: (never mutually exclusive) A and B independent \[ P(A|B) = P(A) \] \[ P(A\cap B) = P(A)P(B) \] \[P(A_1\cap \ldots \cap A_n) = P(A_1)\times \ldots \times P(A_n)\]
+\end{enumerate}
+
+%*********************************************************************************************************
+\section{Module 2: Exploring Data}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsection{Work Unit 1: Graphical Summaries}
+%*********************************************************************************************************
+
+\begin{itemize}
+	\item Pie Charts: Categories add up to 100\%; Units comparable; Slice reflect proportion; order biggest to smallest
+	\item Bar Charts: order biggest to smallest
+	\item Histograms: chose a number between \sfrac{1}{2}L and 2L; all class intervals must be the same, Bimodal - has 2 peaks
+\end{itemize}
+
+
+%*********************************************************************************************************
+\subsubsection{Definitions}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item \textbf{Qualitative Data (Catagorical or Nominal Data):} e.g. Nationality/hair colour (use Pie Chart or Bar Chart)
+	\item \textbf{Quantitative Data (Fully Numeric):} Count/measure captured on scale (no fixed 0) or a ratio (explicit 0) e.g. Weight/height/distance (Use histogram, scatter plot, box plot)
+	\item \textbf{Ordinal Data:} Ranked or ordered data, steps don't have to be the same size, e.g. level of satisfaction/education
+\end{enumerate}
+%*********************************************************************************************************
+\subsubsection{Formula}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item Interval Width \[ L= \frac{X_{max}-X_{min}}{\sqrt{n}}\] or \[L = \frac{X_{max}-X_{min}}{1+log_2n} = \frac{X_{max}-X_{min}}{1+1.44log_en}\]
+	\item Trendline (linear regression) \[y=a+bx\] a = intercept, b = slope
+	\item Explainatory Value $R^2$ The amount of variation in Y that can be explained by X	
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Work Unit 2: Summary Measures of Location and Spread}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsubsection{Definitions}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item \textbf{Statistic:} quantity calculated from the data values of a sample (subset of population)
+	\item \textbf{Parameter:} statistic calculated on the population
+	\item \textbf{5 Number Summary:} min; lower quartile; median; upper quartile; max
+	\item \textbf{Fences:} largest and smallest observations that aren't strays; whiskers in box-and-whisker plot go up to these when you also show outliers and strays
+\end{enumerate}
+%*********************************************************************************************************
+\subsubsection{Measures of Location}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item \textbf{Median:} Robust; not affected by big outliers/strays
+	\item \textbf{Mean:} sensitive to outlying values; useful for symmetric distributions
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsubsection{Measures of Spread}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item \textbf{Range:} Unreliable/sensitve
+	\item \textbf{IQR:} Robust
+	\item \textbf{Standard Deviation:} $(\bar{x}-s, \bar{x}+s)$ contains \sfrac{2}{3} of your observations	
+\end{enumerate}
+%*********************************************************************************************************
+\subsubsection{Formula}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item Standard Deviation  = $\sqrt{Variance}$
+	\item Variance \[s^2 = \frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2 = \frac{1}{n-1}[\sum_{1}^nx_i^2-\frac{1}{n}(\sum_1^nx_i)^2]\]
+	\item Update Variance: \[ s* = \sqrt{\frac{1}{n}[(n-1)s^2+ n(\bar{x}-\bar{x}*)^2+(x_{n+1}-\bar{x}*)^2} ]\]
+	\item Mean \[\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i\]
+	\item Update Mean: \[\bar{x}* = \frac{n\bar{x}+x_{n+1}}{n+1}\]
+	\item Strays \[< Median -3\times (Median -LQ)\] \[ > Median +3\times (UQ-Median) \]
+	\item Outliers \[< Median -6\times (Median -LQ)\] \[ > Median +6\times (UQ-Median) \]
+	
+	\item Median = $X_{(m)}$ where $m = \sfrac{n+1}{2}$
+	\item LQ = $X_{(l)}$ where $l = \sfrac{[m]+1}{2}$
+	\item UQ = $X_{(u)}$ where $u = n-l+1$
+	\item Range = $X_{max}-X_{min} = X_{n}-X_{1}$
+	\item IQR = $x_{(u)}-x_{(l)}$
+	\item Half Rank: $X_{(r+\sfrac{1}{2})} = \sfrac{x_{(r)}+x_{(r+1)}}{2}$
+\end{enumerate}
+
+
+%*********************************************************************************************************
+\subsection{Module 3: Random Variables}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsection{Work Unit 1: Probability Mass and Density Functions}
+%*********************************************************************************************************
+
+\begin{itemize}
+	\item $P(X=x) = P(x)$, where x is specific value of random variable X
+	\item you can assign numbers to qualitative events
+\end{itemize}
+
+
+%*********************************************************************************************************
+\subsubsection{Definitions}
+%*********************************************************************************************************
+
+\begin{enumerate}
+	\item \textbf{Discrete Random Variable:} set of possible values is finite or countably infinite
+	\begin{enumerate}
+		\item \textbf{Probability Mass Function:} p(x)
+		\item Defined for all values of x, but non-zero at finite (or countably infinite) subset of these values
+		\item $0 \leq p(x) \leq 1 \; \forall x$
+		\item $\sum p(x) = 1$
+		\item $ P(a\leq x< b) = \sum_{x=a}^{b-1}p(x)$
+	\end{enumerate}
+	\item \textbf{Continuous Random Variable:} $\{ x|a<x<b \}$
+	\begin{enumerate}
+		\item \textbf{Probability Density Function:} f(x)
+		\item Defined for all values of x
+		\item $0 \leq f(x) \leq \infty \; \forall x$
+		\item $\int_{-\infty}^{\infty} p(x) = 1$ check on non zero interval only
+		\item $P(a < X \leq b) = P(a\leq X<b) = P(a\leq X \leq b) = P(a<X<b) = \int_{a}^{b} p(x)$
+		\item $P(X = a) = 0$
+		\item can be measured to any degree of accuracy
+	\end{enumerate}
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Work Unit 2: Working with Random Variables}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsubsection{Definitions}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item \textbf{Long Run Average:} Expected value of random variable X (E(X)), weighted sum of possible values of X, also called mean, can have theoretical value (value not in S e.g. 3.5 is E(X) for dice)
+	\item $\mu= E(X)$ and $\sigma^2 = Var(X)$
+	\item \textbf{Discrete Random Variable}
+	\begin{enumerate}
+		\item $E(X) = \sum xp(x)$
+		\item $Var(X) = \sum (x-E(X))^2p(x) = (\sum x^2p(x))-E(X)^2$
+		\item $E(X^r) = \sum x^rp(x)$
+	\end{enumerate}
+	\item \textbf{Continuous Random Variable}
+	\begin{enumerate}
+		\item $E(X) = \int_{-\infty}^{\infty} xf(x)dx$
+		\item $Var(X) =E(X^2) - E(X)^2 =  \int_{a}^b (x-E(X))^2f(x)dx = (\int_a^b x^2f(x)dx)-E(X)^2$
+		\item $E(X^r) = \int_a^b x^rf(x)dx$
+	\end{enumerate}
+	\item \textbf{Expected Value:}
+	\begin{enumerate}
+		\item $E(A+B) = E(A) + E(B)$
+		\item $E(A-B) = E(A) - E(B)$
+		\item $E(cA) = cE(A)$ where c is constant
+		\item $Y = aX +b$ then $E(Y) = aE(X)+b$
+	\end{enumerate}
+	\item \textbf{Variance:}
+	\begin{enumerate}
+		\item $Var(A+B) = Var(A) + Var(B)$
+		\item $Var(A-B) = Var(A) + Var(B)$
+		\item $Var(cA) = c^2Var(A)$ where c is constant
+		\item $Y = aX +b$ then $Var(Y) = a^2Var(X)$
+	\end{enumerate}
+	\item \textbf{Coefficient of Variation (CV) = } $$ \frac{\sqrt{Var(X)}}{E(X)} $$only if lower limit of X is 0
+	\item in graphs of pdf, pmf peaked = small  var, flat = large var
+	\item -vely skewed peak on right, symmetric peak in middle, +vely skewed peak on left
+	\item \textbf{Heavy-tailed Distributions:} Probabilty of observations far from the mean is relatively large
+	\item \textbf{Light-tailed distributions:} observations far from the mean are unlikely
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Module 4: Probability Distributions}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsection{Work Unit 1: Uniform Distribution}
+%*********************************************************************************************************
+\[
+	X\sim U(a,b)
+\]
+PDF:
+\[
+	f(x) =\left\{ \begin{array} {lr} \frac{1}{b-a} & a\leq x \leq b \\ 0 & elsewhere \end{array}
+\]
+Integrate this to get the probability
+\\ \\
+Use this when you have a continuous random variable that is equally likely to lie between a and b and impossible to lie outside this interval.
+\\
+\[
+	E(X) = \frac{1}{2}(b+a)
+\]
+\[
+	Var(X) =\frac{(b-a)^2}{12}
+\]
+Distribution Function:
+\[
+	F(x) = \left\{
+	\begin{array}
+	{lr}
+	0 &x<a \\
+	\frac{x-a}{b-a} & a\leq x\leq b\\
+	1 & x>b
+	\end{array}
+\]
+%*********************************************************************************************************
+\subsection{Work Unit 2: Binomial Distribution}
+%*********************************************************************************************************
+\[
+	X \sim B(n,p)
+\]
+PMF:
+\[
+	p(x) =\left\{ \begin{array} {lr} \binom{n}{x}p^x(1-p)^{n-x} & x = 0,1,2...n \\ 0 & elsewhere \end{array}
+\]
+If we are observing the number of successes in n (fixed number) independent trials of an experiment in which the outcome of each trial can only be success or failure with constant probability
+\\
+\[
+	E(X) = np
+\]
+\[
+	Var(X) = np(1-p)
+\]
+%*********************************************************************************************************
+\subsection{Work Unit 3: Poisson and Exponential Distributions}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsubsection{Poisson Distribution}
+%*********************************************************************************************************
+\[
+	X\sim P(\lambda = average)
+\]
+PMF:
+\[
+	p(x) =\left\{ \begin{array} {lr} \frac{e^{-\lambda}\lambda^x}{x!} & x = 0,1,2... \\ 0 & elsewhere \end{array}
+\]
+Models number of events, occurring randomly with an average rate of occurence per unit of time/space/distance
+\[
+	E(X) = Var(X) = \lambda
+\] 
+
+%*********************************************************************************************************
+\subsubsection{Exponential Distribution}
+%*********************************************************************************************************
+\[
+	X\sim E(\lambda = average/unit)
+\]
+PDF:
+\[
+	f(x) =\left\{ \begin{array} {lr} \lambda e^{-\lambda x}  & x >0 \\ 0 & elsewhere \end{array}
+\]
+Models space/distance between events, occurring randomly, with an average rate of occurrence
+\[
+	E(X) = \frac{1}{\lambda}
+\] 
+\[
+	Var(X) = \frac{1}{\lambda^2}
+\]
+%*********************************************************************************************************
+\subsection{Work Unit 4: Normal Distribution}
+%*********************************************************************************************************
+Pattern of averages: If the random variable X is the sum of a large number of random increments then X has a normal distribution (Central Limit Theorem)\\
+\\ EG: Height of trees, amount of stuff in a jar
+\\ Continuous so PDF \\
+\[
+	X \sim N(\mu, \sigma^2)
+\]
+\[
+	p(x<\mu) = 0.5 \;\;\;\;\; p(x>\mu) = 0.5
+\]
+PDF:
+\[
+	f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-1}{2}(\frac{x-\mu}{\sigma})^2}
+\]
+\[
+	E(X) = \mu
+\]
+\[
+	Var(X) = \sigma^2
+\]
+Can't integrate analytically so use the tables in introstat.
+first convert to z:
+\[
+	z = \frac{x-\mu}{\sigma}
+\]
+Tables give $P(0<Z<z)$ so convert accordingly knowing that $P(Z<0) = 0.5$ and the distribution is symmetric about 0.\\\\
+Sum:
+\[
+	X_i \sim N(\mu_i, \sigma_i^2) \;\;\;\;\; Y = \sum X_i \;\;\;\;\; then \;\;\;\;\; Y\sim N(\sum \mu_i, \sum \sigma_i^2)
+\]
+Difference:
+\[
+	X_1 \sim N(\mu_1, \sigma_1^2) \;\;\;\; X_2 \sim N(\mu_2, \sigma_2^2)\;\;\;\ Y = X_1 -X_2
+\]
+\[
+	Y \sim N(\mu_1-\mu_2, \sigma_1^2+\sigma_2^2)
+\]
+Multiplying by Constant:
+\[
+	X \sim N(\mu, \sigma^2) \;\;\;\;\;\; Y = aX+b \;\;\;\;\;\;\; Y\sim N(a\mu+b, a^2\sigma^2)
+\]
+If you want to find $P(X>z^{(p)}) = p$, search for p or closest value in table. $z^{(0.1)} = $ upper $10\%$, lower $10\% = -z^{(0.1)} = z^{(0.9)} = $ upper $90\%$ \\\\\\
+%*********************************************************************************************************
+\subsection{Module 5: Hypothesis Testing}
+%*********************************************************************************************************
+%*********************************************************************************************************
+\subsection{Work Unit 1: Sampling Distribution}
+%*********************************************************************************************************
+Population
+\begin{itemize}
+	\item Parameter - greek
+	\item mean $= \mu$
+	\item variance $= \sigma^2$
+\end{itemize}
+vs Sample
+\begin{itemize}
+	\item Statistic - roman
+	\item mean $= \bar{x}$
+	\item variance $= s^2$
+	\item statistic easier to measure
+	\item can draw inference about population
+\end{itemize}
+Steps
+\begin{enumerate}
+	\item Draw Random Sample
+	\item Measure sample statistic
+	\item use this as an estimate of the true unknown population parameter
+\end{enumerate}
+\\
+Sample must be:
+\begin{enumerate}
+	\item \textbf{Representative: } similar in structure to the population it is drawn from
+	\item \textbf{Random: } Every member of the population has an equal chance of being chosen as part of the sample
+\end{enumerate}
+Statistics will vary due to random sample so a statistic is a random variable
+so $\bar{x}$ is a random variable with a probability distribution called a sampling distribution. \\ \\
+$\sum$ elements in a normal distribution has a normal distribution. \\ So for $X_i$ drawn randomly from a normal distribution:
+\[
+	\sum_{i = 1}^nX_i \sim N(n\mu, n\sigma^2)
+\]
+\[
+	\bar{X} = \frac{1}{n}\sum_{i = 1}^nX_i \;\;\;\;\;\;\; E(\sum_{i = 1}^nX_i ) = n\mu
+\]
+Multiplying by constant \sfrac{1}{n}:
+\[
+	E(\bar{X}) = \frac{1}{n}n\mu = \mu
+\]
+Variance:
+\[
+	Var(\bar{X}) = Var(\frac{1}{n}\sum_{i = 1}^nX_i) = \frac{1}{n^2}Var(\sum_{i = 1}^nX_i) = \frac{n\sigma^2}{n^2} = \frac{\sigma^2}{n}
+\]
+so:
+\[
+	\bar{X} \sim N(\mu, \frac{\sigma^2}{n})
+\]
+What if $X_i$ is not normally distributed? \\ \textbf{Central Limit Theorem: } The average (or sum divided by n) of a large number of variables always has a normal distribution.\\ How Large? n = 30 is sufficient
+\\ \\
+so we have 3 means:
+\begin{enumerate}
+	\item sample
+	\item probability distribution (expected value)
+	\item Population
+\end{enumerate}
+
+Note sample mean is $\bar{X}$ because $\bar{x}$ is a specific value.\\\\ Sample mean based on a large n has a smaller variance so closer to $\mu$
+
+%*********************************************************************************************************
+\subsection{Work Unit 2: Confidence Intervals}
+%*********************************************************************************************************
+
+\textbf{Point Estimate: }No information regarding the uncertainty of the estimate \\
+vs \textbf{Interval: }range of values, communicate how much precision or uncertainty is present in the estimate
+\\
+\[
+	Pr(\bar{X} - z^{(\frac{\alpha}{2})}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X} + z^{(\frac{\alpha}{2})}\frac{\sigma}{\sqrt{n}}) = 1-\alpha = 2L
+\]
+we are $100(1-\alpha)\%$ confident that the value of $\mu$ lie in this interval \\
+choose $z^{(\frac{\alpha}{2})}$ from table such that $P(0<z<z^{(\frac{\alpha}{2})}) = L$, given $\sigma^2$ from population
+\begin{center}
+  \begin{tabular}{ | l | c | }
+    \hline
+    100(1-\alpha)\% & z^{(\frac{\alpha}{2})} \\ \hline
+    95\% & 1.96\\ \hline
+    90\% & 1.645 \\ \hline
+    98\% & 2.33 \\ \hline
+    99\% & 2.58 \\
+    \hline
+  \end{tabular}
+\end{center}
+\[
+	L = z^{(\frac{\alpha}{2})} \frac{\sigma}{\sqrt{n}}
+\]
+\[
+	n = \left( \frac{z^{(\frac{\alpha}{2})} \sigma}{L} \right)^2
+\]
+width of confidence interval $= 2L$, if $\alpha = 0.05$ then confidence interval $= 95\%$.\\\\ increase n, confidence interval narrows. \\ Increase z confidence interval widens \\
+
+%*********************************************************************************************************
+\subsection{Work Unit 3: Testing whether the mean is a specific value}
+%*********************************************************************************************************
+6 Step Hypothesis test
+\begin{enumerate}
+	\item Define null hypothesis ($H_0$) \[H_0: \mu = 0\]
+	\item Define alternative hypothesis ($H_1$) \[H_1: \mu < a\] Or $>$ (one-sided) or $\neq$ (2 sided)
+	\item Set significance level \[\alpha = 0.05\] You will erroneously reject $H_0$ $\alpha \%$ of the time
+	\item Set up rejection region \\ Find $z^{\alpha/2}$ (2-sided) or $z^{\alpha}$ (one-sided)
+	\item Calculate the test statistic (Assume $H_0$ is true) \[ X \sim N(\mu_0, \frac{\sigma^2}{n})\] \[ z = \frac{\bar{X}-\mu_0}{\sqrt{\frac{\sigma^2}{n}}}\]
+	\item Draw a conclusion: \\ If test statistic fall in rejection region reject $H_0$ in favour of $H_1$ else do not reject $H_0$
+\end{enumerate}
+The default is a two-sided test unless you have good reason to suspect a departure in a specific direction.
+
+\\ \\
+Remember to split $\alpha$ in a two sided test
+
+%*********************************************************************************************************
+\subsubsection{Errors}
+%*********************************************************************************************************
+
+\begin{enumerate}
+	\item Type 1
+	\begin{itemize}
+		\item Reject $H_0$ erroneously
+		\item controlled by $\alpha$
+		\item $\alpha$ small reduces probability of this error
+		\item $P(T_1E) = \alpha$
+	\end{itemize}
+	\item Type 2
+	\begin{itemize}
+		\item Accept $H_0$ erroneously
+		\item $\alpha$ small increases probability of this error
+		\item $P(T_2E)$ varies dependent on how close $H_0$ is to the true situation, so difficult to control
+	\end{itemize}
+\end{enumerate}
+
+%*********************************************************************************************************
+\subsection{Work Unit 4: Comparing 2 Sample means}
+%*********************************************************************************************************
+
+EG Test if 2 dies come from same or different populations
+\\ \\
+To compare look at difference:
+\[
+	\bar{X_1}-\bar{X_2} \sim N(\mu_1-\mu_2, \frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2})
+\]
+Hypothesis Test
+\begin{enumerate}
+	\item $H_0: \mu_1 = \mu_2$ or $H_0: \mu_1 - \mu_2 = 0$
+	\item $H_1: \mu_1 \neq \mu_2$
+	\item set $\alpha$
+	\item Find rejection region (in this case 2 sided test but can be one-sided)
+	\item Calculate test statistic: \[ z = \frac{\bar{X_1}-\bar{X_2} - (\mu_1 - \mu_2)}{\sqrt{ \frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \]
+\end{enumerate}
+
+
+%*********************************************************************************************************
+\subsubsection{The Modified Approach}
+%*********************************************************************************************************
+Don't specify a significance level, instead observe significance level based on the test statistic. \\ \\ Test Statistic:
+
+\begin{itemize}
+	\item if $H_1$ is $\neq$ (2-sided): $p-value = P(z>|test stat|)\times 2$
+	\item if $H_1$ is $>$ (1-sided): $p-value = P (z>Test Stat)$
+	\item if $H_1$ is $<$ (1-sided): $p-value = P (z<Test Stat)$
+\end{itemize}
+
+If $H_0$ is true we would observe a difference of at least the size $X_1 - X_2$ p-value\% of the time. \\ \\ Small p-value means $H_0$ unlikely \\ \\reject $H_0$ if p-value$< 0.05$ (remember p-value is prob of type 1 error) 
+
+%*********************************************************************************************************
+\subsection{Work Unit 5: Tests about the mean when we don't know the variance}
+%*********************************************************************************************************
+
+Estimate $\sigma^2$ from $s^2$
+\begin{itemize}
+	\item Now two random variables $\bar{X}$ and $s^2$
+	\item Test statistic now t-test
+	\item still bell shaped and symmetric but flatter-fatter tails
+	\item increase n looks more normal, smaller n - heavier tails
+	\item t distribution \[ t = \frac{\bra{X}- \mu}{\frac{s}{\sqrt{n}}} \sim t_{n-1}\] has $n-1$ degrees of freedom
+\end{itemize}
+
+In table: degrees of freedom along left column, \% $>$ along top \\ \\ Confidence interval \[
+	\bar{X} \pm t_{n-1}^{\alpha/2}\frac{s}{\sqrt{n}}
+\]
+
+Hypothesis test the same, just use t-table \\ \\  Alternative Hypothesis test, for p-value look along n-1 row fro largest value that the test statistics exceeds \\ \\ Why n-1 Degrees of freedom? \\ If given $\bar{x}$ and $x_1, ..., x_{n-1}$ can determine $x_n$, this is why sample variance is multiplied by $\sfrac{1}{n-1}$ \\ \\ General Rule: For each parameter we need to estimate ($s^2$) prior to evaluating the current parameter of interest ($\bar{X}$), we lose 1 degree of freedom \\ \\
+
+for $n>30$: $s^2 \approx \sigma^2$
+
+
+%*********************************************************************************************************
+\subsection{Work Unit 6: Comparing Means of 2 Independent Samples}
+%*********************************************************************************************************
+
+\begin{enumerate}
+	\item Define null Hypothesis \[H_0: \mu_1 = \mu_2\] \[H_0: \mu_1 - \mu_2 = 0\]
+	\item Define Alternative Hypothesis \[H_1: \mu_1 \neq \mu_2\] \[H_0: \mu_1 - \mu_2 \neq 0\]
+	\item Define significance level $\alpha$
+	\item Rejection region
+	\item Test Statistic (t-test) \[t = \frac{(\bar{X_1}-\bar{X_2}) - (\mu_1-\mu_2)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\] But this is wrong because it does not have a t-dist
+	\item so use pooled variance: \[ s_p = \sqrt{\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{(n_1+n_2 - 2)}} \] Assuming population variances are equal i.e. $s_1^2$ and $s_2^2$ are viewed as estimates of the same true variance
+	\item t becomes: \[ t =  t = \frac{(\bar{X_1}-\bar{X_2}) - (\mu_1-\mu_2)}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}} \sim t_{n_1+n_2-2}\]
+	\item conclusion: \[ |test \; statistic| > t^{\sfrac{\alpha}{2}}_{n_1+n_2-2}\]
+\end{enumerate}
+
+Use closest degrees of freedom if the one you are looking for isn't in the table \\ \\ Also can use modified approach
+
+%*********************************************************************************************************
+\subsection{Work Unit 7: Comparing Means of 2 Dependent Samples}
+%*********************************************************************************************************
+
+What matters is difference (change) so Before - After \\ Data is paired
+\\ \\
+Hypothesis Test
+\begin{enumerate}
+	\item Define null Hypothesis \[H_0: \mu_B = \mu_A\] \[H_0: \mu_B - \mu_A = 0\]
+	\item Define Alternative Hypothesis \[H_1: \mu_B \neq \mu_A\] \[H_0: \mu_B - \mu_A \neq 0\] can be 2-sided
+	\item Define significance level $\alpha$
+	\item Rejection region 
+	\item Test Statistic \[d = X_B - X_A\] degrees of freedom is n-1, where n is number of pairs \[ t = \frac{\bar{d}-\mu}{\frac{s_d}{\sqrt{n}}}\]
+	\item conclusion
+\end{enumerate}
+
+if two-sided double p-value \\ \\ Critical Point: paired data are not independent of each other - repeated measures (i.e. same people) \\ \\
+confidence interval
+\[
+	\bar{d} \pm t^{\alpha/2}_{n-1}\frac{s_d}{\sqrt{n}}
+\]
+
+%*********************************************************************************************************
+\subsection{Work Unit 8: Testing whether data fits a specific distribution}
+%*********************************************************************************************************
+Goodness of fit test: check what we observe in a sample with what we expect under a specific hypothesis \\ \\
+6 Step Approach
+\begin{enumerate}
+	\item $H_0: $ X has some pdf/ pmt
+	\item $H_1: $ X has some other distribution (always 1 sided test, don't split $\alpha$)
+	\item $\alpha = 0.05$
+	\item Chi-squared distribution
+	\begin{itemize}
+		\item has degrees of freedom
+		\item skewed to the right
+		\item always positive
+		\item df $=$ number of categories-num parameters we estimate-1
+	\end{itemize}
+	\item Test Statistic \[ D^2 = \sum^{k}_{i = 1}\frac{(O_i-E_i)^2}{E_i} = \sum^{k}_{i = 1}\frac{(O_i)^2}{E_i} -n \] k = number of comparisons, O = observed, E = expected value
+	\item conclusion
+\end{enumerate}
+
+Modified approach: calculate p-value from table: find largest value which is smaller than the test statistic \\ \\ Lose a degree of freedom for each parameter you estimate \\ \\ Need an expected value of at least 5 in each category, otherwise collapse categories. e.g. Poisson dis either choose $\lambda$ and test or get $\lambda$ from data, in which case df $= $ n-2 \\ \\ For normal $\mu$ and $\sigma^2$ are estimated so df $=$ n-3
+\\ \\
+There is a mathematical relationship between the normal and chi-squared distributions
+
+
+%*********************************************************************************************************
+\subsection{Work Unit 9: Testing for an association between 2 categoric variables}
+%*********************************************************************************************************
+
+Table, there is an association between rows (e.g. gender) and columns (e.g. job level). Counts in cells, assume data is random and representative
+\\ \\
+6 Step Approach
+\begin{enumerate}
+	\item $H_0: $ there is no association between rows and columns
+	\item $H_1$ there is an association
+	\item $\alpha = 0.05$
+	\item $D^2 > \chi^{2\alpha}_{df}$ assume $H_0$ is true. one sided, compare observed and expected values \\ DF = ([no rows]-1)([no cols]-1)
+	\item Test Statistic - want $E_i$ is the variables are independent. Remember \[P(A\cap B) = P(A)P(B)\] if A and B independent. so: \[E_{ij} = \frac{Row_i Total \times Col_j Total}{GrandTotal}\] now use: \[D^2 = \sum(\frac{O_i^2}{E_i})-n\]
+	\item Conclusion
+\end{enumerate}
+
+Modified approach: calculate p-value from table or excel
+
+%*********************************************************************************************************
+\subsection{Work Unit 10: Testing for a predictive relationship between 2 Numeric Variables}
+%*********************************************************************************************************
+
+Linear relationship between 2 quantitative random variables:
+\[ y = a +bx\]
+y = dependent variable \\
+x = independent variable\\
+a + b = regression coefficients
+\\ \\
+Use correlation coefficient - true value unknown so estimate from sample: \\
+$\rho$ = population correlation (parameter) \\
+r = Sample Correlation (statistic) \\
+\[-1 \leq r \leq 1\]
+ r = -1 perfect negative (x inc, y dec), r = 1 perfect positive (x inc, y inc), r = 0 variables independent 
+ 
+ \[
+ 	r = \frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{(n-1)s_xs_y}
+ \]
+ Coefficient of determination:
+ \[
+ 	R^2 = r\times r \;\;\;\; 0\leq R^2\leq 1
+ \]
+ measure the property of variation in y that x is able to explain. $1-R^2$ is the proportion of variation in Y that is explained by factors other than X
+ \[
+ 	y = \alpha + \beta x
+ \]
+ $\alpha = $ y intercept \\
+ $\beta = $ slope. estimate from sample \\
+ Closer |r| or $R^2$ to 1 the better the regression model fits the data, closer to 0, the worse the fit
+ 
+ \\ \\
+ Hypothesis Testing: 
+ \begin{enumerate}
+	\item $H_0: \beta = 0$ - no linear relationship 
+	\item $H_1: \beta \neq 0$ or $H_1: \beta < 0$ or $H_1: \beta > 0$ 
+	\item $\alpha = 0.01$
+	\item Rejection Region: test stat $\sim t_{n-2}$ where n = number of pairs of x and y (check other notes for tests)
+	\item Test statistic
+\end{enumerate}
+
+\\\\\\\\\
+
+
+I have produced a pretty picure, that I can reference in Figure~\ref{fig:myfigure}.
+We can also reference Just Some Guy \cite{Guy1998} or Another Bloke \cite{Bloke2005}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[scale = 0.6]{myfigure.png}
+    \caption{This is my pretty picture}
+    \label{fig:myfigure}
+  \end{center}
+\end{figure}
+
+%*********************************************************************************************************
+\section{...}
+%*********************************************************************************************************
+
+%*********************************************************************************************************
+\section{Conclusions}
+%*********************************************************************************************************
+
+%*********************************************************************************************************
+\section{Excel}
+%*********************************************************************************************************
+\begin{enumerate}
+	\item =Rand()
+	\item =If(cond, value, or)
+	\item =countif(start:end, equals)
+\end{enumerate}
+
+%*********************************************************************************************************
+% REFERENCES
+%*********************************************************************************************************
+\begin{thebibliography}{99}
+
+% General AdS/CFT correspondences
+
+\bibitem{Guy1998}
+J. S. Guy, ``{\it A Very Helpful Book}", The Big Publisher, (1998)
+
+\bibitem{Bloke2005}
+A. Bloke, ``{\it Another Book}", XYZ Publisher, (2005)
+
+\end{thebibliography}
+
+
+\end{document}
