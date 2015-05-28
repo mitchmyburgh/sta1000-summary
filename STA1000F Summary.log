@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.9)  26 MAY 2015 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.9)  28 MAY 2015 09:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ProjectTemplate.tex
-(./ProjectTemplate.tex
+**"STA1000F Summary.tex"
+(./STA1000F Summary.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
@@ -529,8 +529,8 @@ Package: xfrac 2014/05/04 v4728 L3 Experimental split-level fractions
 . 
 . Defining document command \sfrac with arg. spec. 'omom' on line 436.
 .................................................
-) (./ProjectTemplate.aux)
-\openout1 = `ProjectTemplate.aux'.
+) (./STA1000F Summary.aux)
+\openout1 = `"STA1000F Summary.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
@@ -597,9 +597,9 @@ LaTeX Info: Redefining \ref on input line 31.
 LaTeX Info: Redefining \pageref on input line 31.
 LaTeX Info: Redefining \nameref on input line 31.
 
-(./ProjectTemplate.out) (./ProjectTemplate.out)
+(./STA1000F Summary.out) (./STA1000F Summary.out)
 \@outlinefile=\write3
-\openout3 = `ProjectTemplate.out'.
+\openout3 = `"STA1000F Summary.out"'.
 
 
 *geometry* driver: auto-detecting
@@ -679,14 +679,14 @@ r/m/n/10 2\OMS/cmsy/m/n/10 g \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/1
  []
 
 [2]
-./ProjectTemplate.tex:90: Missing $ inserted.
+./STA1000F Summary.tex:90: Missing $ inserted.
 <inserted text> 
                 $
 l.90 ...e Mutually Exclusive, Exhaustive Sets:} A_
                                                   1, A_2, \ldots ,A_n \text{...
 
 ? 
-./ProjectTemplate.tex:90: Missing $ inserted.
+./STA1000F Summary.tex:90: Missing $ inserted.
 <inserted text> 
                 $
 l.90 ... A_1, A_2, \ldots ,A_n \text{ s.t. }\\ $A_
@@ -726,8 +726,8 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 92.
 
 
-./ProjectTemplate.tex:95: LaTeX Error: Command \end{enumerate} invalid in math 
-mode.
+./STA1000F Summary.tex:95: LaTeX Error: Command \end{enumerate} invalid in math
+ mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -737,8 +737,8 @@ l.95 \end{enumerate}
                     
 ? 
 
-./ProjectTemplate.tex:95: LaTeX Error: Something's wrong--perhaps a missing \it
-em.
+./STA1000F Summary.tex:95: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -748,8 +748,8 @@ l.95 \end{enumerate}
                     
 ? 
 
-./ProjectTemplate.tex:95: LaTeX Error: Something's wrong--perhaps a missing \it
-em.
+./STA1000F Summary.tex:95: LaTeX Error: Something's wrong--perhaps a missing \i
+tem.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -758,14 +758,14 @@ Type  H <return>  for immediate help.
 l.95 \end{enumerate}
                     
 ? 
-./ProjectTemplate.tex:95: Missing $ inserted.
+./STA1000F Summary.tex:95: Missing $ inserted.
 <inserted text> 
                 $
 l.95 \end{enumerate}
                     
 ? 
 [3]
-./ProjectTemplate.tex:114: Missing $ inserted.
+./STA1000F Summary.tex:114: Missing $ inserted.
 <inserted text> 
                 $
 l.114 	\item  \text{If} A_
@@ -773,7 +773,7 @@ l.114 	\item  \text{If} A_
 
 ? 
 
-./ProjectTemplate.tex:114: LaTeX Error: Bad math environment delimiter.
+./STA1000F Summary.tex:114: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -783,15 +783,15 @@ l.114 ...re pairwise mutually exclusive then: } \[
                                                    P(\cup_{i = 1}^{n}A_i) = ...
 
 ? 
-./ProjectTemplate.tex:114: Missing \endgroup inserted.
+./STA1000F Summary.tex:114: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
 l.114 ..._{i = 1}^{n}A_i) = \sum_{i=1}^{n}P(A_i)\]
                                                   
 ? 
 
-./ProjectTemplate.tex:114: LaTeX Error: \begin{enumerate} on input line 100 end
-ed by \end{equation*}.
+./STA1000F Summary.tex:114: LaTeX Error: \begin{enumerate} on input line 100 en
+ded by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -800,7 +800,7 @@ Type  H <return>  for immediate help.
 l.114 ..._{i = 1}^{n}A_i) = \sum_{i=1}^{n}P(A_i)\]
                                                   
 ? 
-./ProjectTemplate.tex:114: Missing $ inserted.
+./STA1000F Summary.tex:114: Missing $ inserted.
 <inserted text> 
                 $
 l.114 ..._{i = 1}^{n}A_i) = \sum_{i=1}^{n}P(A_i)\]
@@ -814,8 +814,8 @@ sy/m/n/10 [[]\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 P\OT
  []
 
 
-./ProjectTemplate.tex:115: LaTeX Error: \begin{document} ended by \end{enumerat
-e}.
+./STA1000F Summary.tex:115: LaTeX Error: \begin{document} ended by \end{enumera
+te}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -824,7 +824,7 @@ Type  H <return>  for immediate help.
 l.115 \end{enumerate}
                      
 ? 
-./ProjectTemplate.tex:115: Extra \endgroup.
+./STA1000F Summary.tex:115: Extra \endgroup.
 <recently read> \endgroup 
                           
 l.115 \end{enumerate}
@@ -837,7 +837,7 @@ ht/height/distance
  []
 
 [6] [7] [8] [9] [10]
-./ProjectTemplate.tex:313: Missing \right. inserted.
+./STA1000F Summary.tex:313: Missing \right. inserted.
 <inserted text> 
                 \right .
 l.313 \]
@@ -853,14 +853,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--318
 
  []
 
-./ProjectTemplate.tex:333: Missing \right. inserted.
+./STA1000F Summary.tex:333: Missing \right. inserted.
 <inserted text> 
                 \right .
 l.333 \]
         
 ? 
 [11]
-./ProjectTemplate.tex:343: Missing \right. inserted.
+./STA1000F Summary.tex:343: Missing \right. inserted.
 <inserted text> 
                 \right .
 l.343 \]
@@ -871,13 +871,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--346
 
  []
 
-./ProjectTemplate.tex:364: Missing \right. inserted.
+./STA1000F Summary.tex:364: Missing \right. inserted.
 <inserted text> 
                 \right .
 l.364 \]
         
 ? 
-./ProjectTemplate.tex:379: Missing \right. inserted.
+./STA1000F Summary.tex:379: Missing \right. inserted.
 <inserted text> 
                 \right .
 l.379 \]
@@ -915,7 +915,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--432
 
 [14]
 
-./ProjectTemplate.tex:458: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:458: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -944,49 +944,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 499--502
 
  []
 
-./ProjectTemplate.tex:510: Missing $ inserted.
+./STA1000F Summary.tex:510: Missing $ inserted.
 <inserted text> 
                 $
 l.510     100(1-\alpha
                       )\% & z^{(\frac{\alpha}{2})} \\ \hline
 ? 
-./ProjectTemplate.tex:510: Extra }, or forgotten $.
+./STA1000F Summary.tex:510: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
 l.510     100(1-\alpha)\% &
                             z^{(\frac{\alpha}{2})} \\ \hline
 ? 
-./ProjectTemplate.tex:510: Missing $ inserted.
+./STA1000F Summary.tex:510: Missing $ inserted.
 <inserted text> 
                 $
 l.510     100(1-\alpha)\% &
                             z^{(\frac{\alpha}{2})} \\ \hline
 ? 
-./ProjectTemplate.tex:510: Missing } inserted.
+./STA1000F Summary.tex:510: Missing } inserted.
 <inserted text> 
                 }
 l.510     100(1-\alpha)\% &
                             z^{(\frac{\alpha}{2})} \\ \hline
 ? 
-./ProjectTemplate.tex:510: Missing $ inserted.
+./STA1000F Summary.tex:510: Missing $ inserted.
 <inserted text> 
                 $
 l.510     100(1-\alpha)\% & z^
                               {(\frac{\alpha}{2})} \\ \hline
 ? 
-./ProjectTemplate.tex:510: Extra }, or forgotten $.
+./STA1000F Summary.tex:510: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
 l.510 ...pha)\% & z^{(\frac{\alpha}{2})} \\ \hline
                                                   
 ? 
-./ProjectTemplate.tex:510: Missing $ inserted.
+./STA1000F Summary.tex:510: Missing $ inserted.
 <inserted text> 
                 $
 l.510 ...pha)\% & z^{(\frac{\alpha}{2})} \\ \hline
                                                   
 ? 
-./ProjectTemplate.tex:510: Missing } inserted.
+./STA1000F Summary.tex:510: Missing } inserted.
 <inserted text> 
                 }
 l.510 ...pha)\% & z^{(\frac{\alpha}{2})} \\ \hline
@@ -1004,7 +1004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 523--525
 
 [17]
 
-./ProjectTemplate.tex:540: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:540: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1014,7 +1014,7 @@ l.540 \\ \\
            
 ? 
 
-./ProjectTemplate.tex:541: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:541: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1044,7 +1044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 594--595
  []
 
 [19]
-./ProjectTemplate.tex:606: Undefined control sequence.
+./STA1000F Summary.tex:606: Undefined control sequence.
 <argument> \bra 
                 {X}- \mu 
 l.606 ...= \frac{\bra{X}- \mu}{\frac{s}{\sqrt{n}}}
@@ -1149,7 +1149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 705--713
 
 [25]
 
-./ProjectTemplate.tex:731: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:731: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1159,7 +1159,7 @@ l.731  \\ \\
             
 ? 
 
-./ProjectTemplate.tex:732: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:732: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1170,7 +1170,7 @@ l.732  H
 ? 
 [26]
 
-./ProjectTemplate.tex:741: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:741: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1180,7 +1180,7 @@ l.741 \\\\
           \\\\\
 ? 
 
-./ProjectTemplate.tex:741: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:741: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1190,7 +1190,7 @@ l.741 \\\\\\
             \\\
 ? 
 
-./ProjectTemplate.tex:741: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:741: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1200,7 +1200,7 @@ l.741 \\\\\\\\
               \
 ? 
 
-./ProjectTemplate.tex:741: LaTeX Error: There's no line here to end.
+./STA1000F Summary.tex:741: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1209,70 +1209,65 @@ Type  H <return>  for immediate help.
 l.741 \\\\\\\\\
                
 ? 
-
-LaTeX Warning: File `myfigure.png' not found on input line 749.
-
-
-./ProjectTemplate.tex:749: Package pdftex.def Error: File `myfigure.png' not fo
-und.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.749 ...ncludegraphics[scale = 0.6]{myfigure.png}
-                                                  
-? 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
 [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 788.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 788.
- (./ProjectTemplate.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 788.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 788.
-Package rerunfilecheck Info: File `ProjectTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 5C3E54E478790D8539F8173FDB9D1B9A;3955.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+ (./STA1000F Summary.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 
+
+Package rerunfilecheck Warning: File `"STA1000F Summary".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"STA1000F Summary".out':
+(rerunfilecheck)             Before: 5C3E54E478790D8539F8173FDB9D1B9A;3955
+(rerunfilecheck)             After:  651F17406B1B54A91115FA1409DF40DF;3869.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25002pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 788.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  ) 
 Here is how much of TeX's memory you used:
- 13111 strings out of 493117
- 228489 string characters out of 6135434
- 298586 words of memory out of 5000000
- 16187 multiletter control sequences out of 15000+600000
- 24630 words of font info for 92 fonts, out of 8000000 for 9000
+ 13098 strings out of 493117
+ 228382 string characters out of 6135434
+ 298595 words of memory out of 5000000
+ 16183 multiletter control sequences out of 15000+600000
+ 24116 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,37p,10426b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+ 40i,13n,37p,10429b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb>
-Output written on ProjectTemplate.pdf (28 pages, 269768 bytes).
+Output written on "STA1000F Summary.pdf" (27 pages, 246218 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 252 named destinations out of 1000 (max. 500000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 247 named destinations out of 1000 (max. 500000)
  385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
